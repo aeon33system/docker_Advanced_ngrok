@@ -1,0 +1,15 @@
+version: '3'
+services:
+  flask:
+    build:
+      context: ./
+    container_name: python_test
+    tty: true
+    stdin_open: true
+    ports:
+      - "5000:5000"
+#Developer use    
+    #volumes:
+    #  - ./web:/app/
+    #command:
+    #  - app.py
